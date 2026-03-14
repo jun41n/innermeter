@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core pages -->
+  <url><loc>https://innermeter.app/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://innermeter.app/tests</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://innermeter.app/tarot</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://innermeter.app/k-shaman</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Tests -->
+  <url><loc>https://innermeter.app/tests/mbti-test</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://innermeter.app/tests/love-style-test</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://innermeter.app/tests/hidden-personality-test</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://innermeter.app/tests/how-friends-see-me-test</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://innermeter.app/tests/attachment-style-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/destiny-age-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/teto-egen-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/extreme-tf-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/inner-child-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/intuition-vs-logic-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/love-villain-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/meddling-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/over-immersion-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://innermeter.app/tests/villain-type-test</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Info pages -->
+  <url><loc>https://innermeter.app/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://innermeter.app/privacy</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://innermeter.app/terms</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://innermeter.app/contact</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+</urlset>
