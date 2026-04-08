@@ -1,14 +1,16 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad" x1="0" y1="0" x2="180" y2="180" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="hsl(262,83%,58%)"/>
-      <stop offset="100%" stop-color="hsl(330,80%,65%)"/>
+    <linearGradient id="g" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#EC4899"/>
     </linearGradient>
   </defs>
-  <rect width="180" height="180" rx="36" fill="url(#grad)"/>
-  <path d="M74.775 116.25A15 15 0 0 0 63.75 105.225L17.988 93.338a3.75 3.75 0 0 1 0-7.2L63.75 74.25A15 15 0 0 0 74.775 63.225L86.663 17.475a3.75 3.75 0 0 1 7.2 0L105.75 63.225A15 15 0 0 0 116.775 74.25l45.75 11.888a3.75 3.75 0 0 1 0 7.2L116.775 105.225A15 15 0 0 0 105.75 116.25l-11.888 45.75a3.75 3.75 0 0 1-7.2 0Z" fill="white"/>
-  <path d="M150 22.5v30" stroke="white" stroke-width="7.5" stroke-linecap="round"/>
-  <path d="M165 37.5h-30" stroke="white" stroke-width="7.5" stroke-linecap="round"/>
-  <path d="M30 127.5v15" stroke="white" stroke-width="6" stroke-linecap="round"/>
-  <path d="M37.5 135h-15" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  <rect width="100" height="100" rx="24" fill="url(#g)"/>
+  <g transform="translate(13,13) scale(3.1)">
+    <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" fill="white"/>
+    <line x1="20" y1="3" x2="20" y2="7" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="18" y1="5" x2="22" y2="5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="4" y1="17" x2="4" y2="19" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="3" y1="18" x2="5" y2="18" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
 </svg>
