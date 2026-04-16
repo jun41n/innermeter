@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -7,35 +7,60 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
 
-    <!-- SEO -->
-    <title>Fun Personality Test | MBTI, Love, Psychology Quiz</title>
+    <!-- SEO: Korean-first -->
+    <title>MyTestType | MBTI 테스트, 반려동물 MBTI, 성격 심리 테스트</title>
     <meta
       name="description"
-      content="Discover your personality, love style, and hidden traits. Try fun MBTI, psychology, and relationship tests in just 3 minutes."
+      content="MBTI 테스트, 반려동물 MBTI, 사주팔자, 연애 심리 테스트를 3분 만에! 나의 성격 유형과 숨겨진 심리를 무료로 알아보세요. 6개 언어 지원."
     />
     <meta
       name="keywords"
-      content="personality test, mbti test, love test, psychology test, relationship test, fun quiz, viral quiz"
+      content="MBTI 테스트, 반려동물 MBTI, 성격 테스트, 심리 테스트, 사주팔자, 운세, 연애 테스트, 성격 유형, MBTI 유형, 반려동물 성격, 퍼스널리티 테스트, mbti test, pet mbti, personality test, psychology test, love test, character test, 타로, 내면 아이, 빌런 유형, MBTI quiz, 무료 MBTI, free mbti test, 성격 심리, dog personality, cat personality"
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href="https://mytesttype.com/" />
+
+    <!-- hreflang: 다국어 SEO -->
+    <link rel="alternate" hreflang="ko" href="https://mytesttype.com/?lang=ko" />
+    <link rel="alternate" hreflang="en" href="https://mytesttype.com/?lang=en" />
+    <link rel="alternate" hreflang="ja" href="https://mytesttype.com/?lang=ja" />
+    <link rel="alternate" hreflang="es" href="https://mytesttype.com/?lang=es" />
+    <link rel="alternate" hreflang="pt" href="https://mytesttype.com/?lang=pt" />
+    <link rel="alternate" hreflang="fr" href="https://mytesttype.com/?lang=fr" />
+    <link rel="alternate" hreflang="x-default" href="https://mytesttype.com/" />
+
+    <!-- GEO: AI 검색엔진(ChatGPT, Gemini, Perplexity) 최적화 -->
+    <meta name="author" content="MyTestType" />
+    <meta name="generator" content="MyTestType" />
+    <meta name="theme-color" content="#6366f1" />
+    <meta name="application-name" content="MyTestType" />
+    <meta name="category" content="personality test, psychology, mbti, entertainment" />
+    <meta name="classification" content="Psychology, Entertainment, Self-improvement" />
+    <meta name="subject" content="MBTI 성격 테스트, 반려동물 MBTI, 심리 테스트" />
+    <meta name="coverage" content="Worldwide" />
+    <meta name="distribution" content="Global" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="MyTestType" />
     <meta
       property="og:title"
-      content="Fun Personality Test | MBTI, Love, Psychology Quiz"
+      content="MyTestType | MBTI 테스트, 반려동물 MBTI, 성격 심리 테스트"
     />
     <meta
       property="og:description"
-      content="Discover your personality, love style, and hidden traits with fun MBTI and psychology quizzes."
+      content="MBTI, 반려동물 MBTI, 사주팔자, 연애 심리 테스트를 무료로! 나의 성격 유형을 3분 만에 알아보세요."
     />
     <meta property="og:image" content="https://mytesttype.com/opengraph.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://mytesttype.com/" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:locale:alternate" content="ko_KR" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:locale:alternate" content="en_US" />
     <meta property="og:locale:alternate" content="ja_JP" />
     <meta property="og:locale:alternate" content="es_ES" />
     <meta property="og:locale:alternate" content="pt_BR" />
@@ -43,13 +68,14 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@mytesttype" />
     <meta
       name="twitter:title"
-      content="Fun Personality Test | MBTI, Love, Psychology Quiz"
+      content="MyTestType | MBTI 테스트, 반려동물 MBTI, 성격 심리 테스트"
     />
     <meta
       name="twitter:description"
-      content="Try fun personality, love, and psychology quizzes in just 3 minutes."
+      content="MBTI, 반려동물 MBTI, 연애 심리 테스트를 무료로! 3분 만에 나의 성격 유형 알아보기."
     />
     <meta name="twitter:image" content="https://mytesttype.com/opengraph.jpg" />
 
@@ -90,20 +116,83 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- JSON-LD -->
+    <!-- JSON-LD: WebSite + WebApplication + FAQPage -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "MyTestType",
-        "url": "https://mytesttype.com/",
-        "description": "A fun personality, love, MBTI, and psychology quiz platform.",
-        "inLanguage": ["en", "ko", "ja", "es", "pt", "fr"],
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://mytesttype.com/tests",
-          "query-input": "required name=search_term_string"
-        }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://mytesttype.com/#website",
+            "name": "MyTestType",
+            "alternateName": ["마이테스트타입", "MyTestType 성격 테스트"],
+            "url": "https://mytesttype.com/",
+            "description": "MBTI 테스트, 반려동물 MBTI, 사주팔자, 연애 심리 테스트 플랫폼. 6개 언어 지원.",
+            "inLanguage": ["ko", "en", "ja", "es", "pt", "fr"],
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://mytesttype.com/tests?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://mytesttype.com/#app",
+            "name": "MyTestType",
+            "url": "https://mytesttype.com/",
+            "applicationCategory": "EntertainmentApplication",
+            "operatingSystem": "Any",
+            "browserRequirements": "Requires JavaScript",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "KRW"
+            },
+            "description": "무료 MBTI 테스트, 반려동물 MBTI, 사주팔자, 연애 심리 테스트 앱",
+            "inLanguage": ["ko", "en", "ja", "es", "pt", "fr"]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://mytesttype.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "MBTI 테스트는 무료인가요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "네, MyTestType의 모든 성격 테스트는 완전 무료입니다. 회원가입 없이 바로 테스트할 수 있습니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "반려동물 MBTI 테스트가 무엇인가요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "반려동물 MBTI는 당신의 성격을 강아지 또는 고양이 MBTI 유형으로 분석하는 재미있는 심리 테스트입니다. 15문항으로 3분 안에 완료할 수 있습니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "사주팔자 테스트도 있나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "네, MyTestType에서는 사주팔자 운세 분석과 함께 다양한 심리 테스트를 제공합니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "몇 가지 언어를 지원하나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "한국어, 영어, 일본어, 스페인어, 포르투갈어, 프랑스어 총 6개 언어를 지원합니다."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
 
