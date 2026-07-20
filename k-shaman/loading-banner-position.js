@@ -1,24 +1,23 @@
 (function () {
   "use strict";
 
+  var NATIVE_CONTAINER_ID = "container-12cdf4ce15fbd319a5a65c7f165496a7";
   var observer;
   var banner;
   var originalParent;
   var originalNextSibling;
   var savedStyle;
 
-  function getLoadingScreen() {
-    if (window.location.pathname !== "/gwansang") return null;
+  function getLoadingSlot() {
+    var nativeContainer = document.getElementById(NATIVE_CONTAINER_ID);
+    if (!nativeContainer) return null;
 
-    var logo = document.querySelector('img[src="/gwansang.png"]');
-    if (!logo) return null;
-
-    var screen = logo.closest('div[style*="min-height: 75vh"]');
-    if (!screen || !screen.querySelector(".rounded-full.overflow-hidden")) {
+    var loadingBlock = nativeContainer.closest(".space-y-4");
+    if (!loadingBlock || !loadingBlock.querySelector(".animate-pulse")) {
       return null;
     }
 
-    return screen;
+    return nativeContainer.parentElement;
   }
 
   function getBanner() {
@@ -35,7 +34,7 @@
     return null;
   }
 
-  function moveIntoLoadingScreen(screen) {
+  function moveIntoLoadingSlot(slot) {
     if (!banner) {
       banner = getBanner();
       if (!banner) return;
@@ -45,8 +44,11 @@
       savedStyle = banner.getAttribute("style");
     }
 
-    if (banner.parentNode !== screen) {
-      screen.appendChild(banner);
+    var nativeContainer = document.getElementById(NATIVE_CONTAINER_ID);
+    if (nativeContainer) nativeContainer.style.display = "none";
+
+    if (banner.parentNode !== slot) {
+      slot.appendChild(banner);
     }
 
     banner.style.position = "relative";
@@ -54,9 +56,8 @@
     banner.style.bottom = "auto";
     banner.style.transform = "none";
     banner.style.zIndex = "10";
-    banner.style.margin = "30px auto 0";
+    banner.style.margin = "16px auto 0";
     banner.style.width = "320px";
-    banner.style.flexShrink = "0";
   }
 
   function restoreBanner() {
@@ -76,9 +77,9 @@
   }
 
   function syncBannerPosition() {
-    var screen = getLoadingScreen();
-    if (screen) {
-      moveIntoLoadingScreen(screen);
+    var slot = getLoadingSlot();
+    if (slot) {
+      moveIntoLoadingSlot(slot);
     } else {
       restoreBanner();
     }
